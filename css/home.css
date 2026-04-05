@@ -1,0 +1,116 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background: linear-gradient(to right, #74ebd5, #9face6);
+}
+
+/* App Container */
+.app{
+    width:320px;
+    background:white;
+    border-radius:20px;
+    padding:15px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.2);
+}
+
+/* Header */
+.header{
+    display:flex;
+    align-items:center;
+    gap:5px;
+    font-weight:bold;
+    font-size:18px;
+}
+
+/* Center Weather Icon */
+.main-icon{
+    text-align:center;
+    margin:20px 0;
+}
+
+.main-icon span{
+    font-size:70px;
+    color:orange;
+}
+
+/* Temperature Section */
+.temp-section{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.temp-left{
+    font-size:40px;
+    font-weight:bold;
+}
+
+.temp-right{
+    text-align:right;
+}
+
+.temp-right h3{
+    font-size:14px;
+}
+
+.temp-right p{
+    font-size:12px;
+}
+
+/* Cards Section */
+.cards{
+    display:flex;
+    gap:10px;
+    margin-top:20px;
+}
+
+/* Card Style */
+.card{
+    flex:1;
+    padding:10px;
+    border-radius:15px;
+    background:#f2f2f2;
+    text-align:center;
+}
+
+/* Small icon */
+.card span{
+    font-size:30px;
+    color:orange;
+}
+
+/* Bottom Nav */
+.nav{
+    display:flex;
+    justify-content:space-around;
+    margin-top:20px;
+    padding-top:10px;
+    border-top:1px solid #ddd;
+}
+
+.nav span{
+    font-size:25px;
+    cursor:pointer;
+}
+.weather-img img{
+    display:flex;
+    justify-content:center;
+    margin-left:23%;
+    height:auto;
+    width:150px;
+}
+
+.weather_small_img img{
+   
+    width:30px;
+    height:30px;
+}
