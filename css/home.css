@@ -10,13 +10,14 @@ body{
     display:flex;
     justify-content:center;
     align-items:center;
-    background: linear-gradient(to right, #74ebd5, #9face6);
+    background: linear-gradient(to right, #6c5aad, #9face6);
 }
 
 /* App Container */
 .app{
-    width:320px;
-    background:white;
+    width:380px;
+    height:550px;
+      background: linear-gradient( #6e5270, #9face6);
     border-radius:20px;
     padding:15px;
     box-shadow:0 10px 30px rgba(0,0,0,0.2);
@@ -29,6 +30,12 @@ body{
     gap:5px;
     font-weight:bold;
     font-size:18px;
+}
+
+.weather-img img{
+    margin-top: 30px;
+    width:60px;
+    height:60px;
 }
 
 /* Center Weather Icon */
@@ -44,13 +51,15 @@ body{
 
 /* Temperature Section */
 .temp-section{
+    margin-top:20px;
     display:flex;
     justify-content:space-between;
     align-items:center;
 }
 
 .temp-left{
-    font-size:40px;
+
+    font-size:50px;
     font-weight:bold;
 }
 
@@ -70,7 +79,7 @@ body{
 .cards{
     display:flex;
     gap:10px;
-    margin-top:20px;
+    margin-top:40px;
 }
 
 /* Card Style */
@@ -113,4 +122,98 @@ body{
    
     width:30px;
     height:30px;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 28px;
+    opacity: 0.6;
+}
+
+.nav a.active {
+    color: rgb(76, 7, 238);
+    opacity: 1;
+    transform: scale(1.2);
+}
+
+.Container {
+      width:380px;
+    height:550px;
+      background: linear-gradient( #6e5270, #9face6);
+    border-radius:20px;
+    padding:15px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.2);
+}
+
+.search-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    border-radius: 25px;
+    background: rgba(255, 255, 255, 1);
+    backdrop-filter: blur(0px);
+}
+ 
+#search{
+    width: 80%;
+    padding: 10px;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+}
+
+#search:focus{
+    outline: none;
+}
+
+.extra{
+
+}
+.extra {
+    display: flex;
+    justify-content: space-between;  /* pushes left & right */
+    gap: 10px;
+    margin-top: 20px;
+}
+
+#Sunrise, #Sunset {
+    flex: 1;                      /* equal width */
+    display: flex;
+    flex-direction: column;       /* vertical content */
+    align-items: center;          /* center inside */
+    justify-content: center;
+}
+
+
+.main-weather{
+   
+    width:auto;
+    height:200px;
+    flex-direction: column;
+    margin-top: 30px;
+    align-items: center;
+    justify-content: center;
+}
+.temp-widget{
+      flex:1;
+    padding:10px;
+    border-radius:15px;
+    background:#f2f2f2;
+    text-align:center;
+    height:200px;
+}
+.Wind, .Pressure, .Humidity{
+  flex:1;
+    padding:10px;
+    border-radius:15px;
+    background:#f2f2f2;
+    text-align:center;
 }
